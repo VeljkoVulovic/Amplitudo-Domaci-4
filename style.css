@@ -1,0 +1,33 @@
+body{
+    width: 40%;
+    margin: auto 30% !important;
+}
+
+form{
+    margin-top: 70px;
+    padding: 10%;
+    background-color: rgb(245, 235, 222);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#checkBox{
+    width: 18px;
+    height: 18px;
+}
+
+#checkBoxDiv{
+    text-align: center;
+}
+
+form button{
+    margin-top: 15px;
+    width: 180px;
+    height: 50px;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Domaći zadatak 4 – PHP</title>
+</head>
+
+<body>
+    <form action="sacuvaj_zelju.php" method="POST">
+        <h2>Pošaljite vašu želju Deda Mrazu!</h2>
+        <div class="mb-3">
+            <label for="firstName" class="form-label"><b>Ime:</b></label>
+            <input type="text" class="form-control" id="firstName" name="firstName">
+
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label"><b>Prezime:</b></label>
+            <input type="text" class="form-control" id="lastName" name="lastName">
+        </div>
+        <label for="city" class="form-label"><b>Grad:</b></label>
+        <select class="form-control" id="city" name="city">
+            <option value="gradNijeIzabran">Izaberite grad...</option>
+            <option value="podgorica">Podgorica</option>
+            <option value="niksic">Nikšic</option>
+            <option value="bijeloPolje">Bijelo Polje</option>
+            <option value="Bar">Bar</option>
+            <option value="Pljevlja">Pljevlja</option>
+            <option value="Kotor">Kotor</option>
+            <option value="hercegNovi">Herceg Novi</option>
+        </select>
+        <div class="form-group mb-3 mt-3">
+            <label for="textArea"><b>Opišite vašu želju:</b></label>
+            <textarea class="form-control" id="textArea" rows="5" name="wish"></textarea>
+        </div>
+        <div class="form-check mt-3 mb-3" id="checkBoxDiv">
+            <label class="form-check-label mr-4"><b><i>Da li ste bili dobri ove godine?</i></b></label>
+            <input type="checkbox" class="form-check-input" id="checkBox" name="checkbox">
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary"><b>Pošalji želju</b></button>
+        </div>
+    </form>
+    <!-- Bootstrap -->
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
